@@ -1,0 +1,923 @@
+@font-face {
+  font-family: "SanFranciscoText-Medium";
+  src: url("./fonts/SanFranciscoText-Medium.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SanFranciscoText-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SanFranciscoText-Medium.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SanFranciscoText-Medium.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SanFranciscoText-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SanFranciscoText-Medium.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SanFranciscoText-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SanFranciscoText-LightItalic";
+  src: url("./fonts/SanFranciscoText-LightItalic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SanFranciscoText-LightItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SanFranciscoText-LightItalic.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SanFranciscoText-LightItalic.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SanFranciscoText-LightItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SanFranciscoText-LightItalic.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SanFranciscoText-LightItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SanFranciscoDisplay-Thin";
+  src: url("./fonts/SanFranciscoDisplay-Thin.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SanFranciscoDisplay-Thin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SanFranciscoDisplay-Thin.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SanFranciscoDisplay-Thin.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SanFranciscoDisplay-Thin.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SanFranciscoDisplay-Thin.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SanFranciscoDisplay-Thin.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SanFranciscoDisplay-Medium";
+  src: url("./fonts/SanFranciscoDisplay-Medium.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SanFranciscoDisplay-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SanFranciscoDisplay-Medium.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SanFranciscoDisplay-Medium.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SanFranciscoDisplay-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SanFranciscoDisplay-Medium.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SanFranciscoDisplay-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SanFranciscoDisplay-Light";
+  src: url("./fonts/SanFranciscoDisplay-Light.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SanFranciscoDisplay-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SanFranciscoDisplay-Light.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SanFranciscoDisplay-Light.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SanFranciscoDisplay-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SanFranciscoDisplay-Light.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SanFranciscoDisplay-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SanFranciscoDisplay-Heavy";
+  src: url("./fonts/SanFranciscoDisplay-Heavy.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SanFranciscoDisplay-Heavy.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SanFranciscoDisplay-Heavy.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SanFranciscoDisplay-Heavy.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SanFranciscoDisplay-Heavy.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SanFranciscoDisplay-Heavy.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SanFranciscoDisplay-Heavy.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SanFranciscoDisplay-Bold";
+  src: url("./fonts/SanFranciscoDisplay-Bold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SanFranciscoDisplay-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SanFranciscoDisplay-Bold.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SanFranciscoDisplay-Bold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SanFranciscoDisplay-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SanFranciscoDisplay-Bold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SanFranciscoDisplay-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SanFranciscoDisplay-Regular";
+  src: url("./fonts/SanFranciscoDisplay-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SanFranciscoDisplay-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SanFranciscoDisplay-Regular.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SanFranciscoDisplay-Regular.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SanFranciscoDisplay-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SanFranciscoDisplay-Regular.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/SanFranciscoDisplay-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.headerAll {width: 100%;height: auto;position: absolute;padding-top: 40px;z-index: 99;}
+.logo {width: auto;height: auto;float: left;margin-left: 100px;}
+.logo img {width: 174px;height: 22px;float: left;}
+
+.menuAll{width: auto;height: auto;float: right;margin-right: 70px;margin-top: 4px;}
+.menuAll ul {width: 100%;height: auto;float: left;}
+.menuAll ul li {width: auto;height: auto;float: left;margin-left: 68px;}
+.menuAll ul li:hover{cursor: pointer;}
+.menuAll ul li:first-child {margin-left: 0;}
+.menuAll ul li:last-child:hover .menuIcon{background-position: 0px -20px;}
+.menuAll ul li:hover a{color: #062d5f; }
+.menuAll ul li a {width: auto;float: left; font-family: "SanFranciscoDisplay-Medium";font-size: 16px;color: #5e6c7e;transition: all ease-in 0.2s;}
+.menuAll ul li.active a{color:  #062d5f!important;font-weight: bold!important;}
+.menuIcon {width: 20px;height: 20px;float: left;background: url(../img/menu-icon-other-pages.png)no-repeat;margin-left:10px;margin-top: -2px;}
+
+
+.menuMainPage ul li a{color: #ffffff!important;}
+.menuMainPage ul li:hover a{color: #1baaf7!important;}
+.menuMainPage ul li.active a {color:  #fff!important;font-weight: bold!important;}
+.menuMainPage .menuIcon {width: 20px;height: 20px;float: left;background: url(../img/menu-icon.png)no-repeat;margin-left:10px;margin-top: -2px;}
+.menuMainPage ul li:last-child:hover .menuIcon{background-position: 0px -20px;}
+
+.fullsize {margin-top: 0px!important;}
+.mainSliderTitle {  color: #fff;}
+.mainSliderButton {border-radius: 50px;background: url(../img/mainSliderButtonArrow.png)no-repeat;background-position: right 20px center;position: relative;z-index: 999;}
+
+.sliderPager {width: auto; margin-left: 12%; position: fixed;bottom: 40px;z-index: 99;}
+.sliderPager ul {width: auto;height: auto;float: left;}
+.sliderPager ul li {width: auto;height: auto;float: left;margin-left: 25px;cursor: pointer;}
+.sliderPager ul li.active .sliderText { border-bottom: 1px solid rgba(255, 255, 255, 0.30);}
+.sliderPager ul li:first-child {margin-left: 0;}
+
+.sliderLoader {width: 70px;height: auto;float: left;}
+.sliderLoader i {width: 40px;height: 40px;float: left; border:1px solid rgba(255, 255, 255, 0.30); border-radius: 100%;}
+.sliderLoader span{width: 40px;height: auto;float: left;text-align: center;  font-family: "SanFranciscoText-Medium";font-size: 14px;color: #d0cecf;margin-top: -27px;}
+
+.sliderText {width: 200px;height:65px;float: left; }
+.sliderText ul {width: 100%;height: auto;float: left;}
+.sliderText ul li {width: auto;float: left;}
+
+.sliderText span {width: 100%;height: 60px;float: left; overflow: hidden;  font-family: "SanFranciscoText-Medium";font-size: 14px;color: #d0cecf;text-transform: uppercase;line-height: 22px;}
+
+
+.contactMenu {transition:all ease-in 0.6s;visibility: hidden;opacity: 0;overflow: hidden; width: 50%; background: #ffffff; position: fixed;
+  right: 0; top: 0; bottom: 0; z-index: 950;right: -50%;}
+
+.contactMenu.active {  visibility: visible;opacity: 1;transition:all ease-in 0.6s;right: 0%;}
+.contactMenuBlur {transition:all ease-in 0.6s;visibility: hidden;opacity: 0; width: 50%; background: url(../img/openMenuLeftBackground.png)repeat; position: fixed;  left: -50%; top: 0; bottom: 0; z-index: 950; }
+.contactMenuBlur.active {   visibility: visible;opacity: 0.8;transition:all ease-in 0.6s;left: 0%;     }
+
+.contactMenuLayout {width: auto;float: right;padding: 40px 65px 0 0;}
+.contactMenuLayoutLeft {width: auto; position: absolute; left: 0; z-index: 9; margin-left: 14%;}
+.contactMenuLayoutLeft h3 {width: 100%;float: left;font-family: "SanFranciscoDisplay-Heavy";font-size: 40px;color: #062d5f;margin-bottom: 50px;margin-top: 140px;}
+.contactMenuLayoutLeft p {width: 320px;float: left;margin-right: 50%;  font-family: "SanFranciscoDisplay-Heavy";font-size: 18px;color: #2798d8;margin-bottom: 50px;}
+.contactMenuLayoutLeft a {width: auto;float: left;font-family: "SanFranciscoDisplay-Thin";font-size: 18px;color: #2798d8; cursor: pointer;}
+.contactBackUp {width: 500px; height: 500px; position: absolute; background: url(../img/contactBack.png)no-repeat; left: -250px; background-position: center top;
+    background-size: 100% auto;top: 0; }
+.contactClose {width: 24px;height: 24px;float: right;background: url(../img/close.png)no-repeat;cursor: pointer;position: relative;z-index: 99;}
+
+.contactMenuSocial {width: auto;position: absolute;bottom: 0;margin-left: 14%;left: 0;}
+.contactMenuSocial ul {width: 100%;height: auto;float: left;margin-top: -210px;}
+.contactMenuSocial ul li {width: auto;float: left;margin-left: 30px;}
+.contactMenuSocial ul li:first-child {margin-left: 0;}
+.contactMenuSocial span {width: auto;float: left; font-family: "SanFranciscoDisplay-Light";font-size: 12px;color: #696969;margin-top: -100px;}
+
+.linkedin {width: 20px;height: 20px;float: left;background: url(../img/linkedin.png)no-repeat;}
+.facebook {width: 20px;height: 20px;float: left;background: url(../img/facebook.png)no-repeat;}
+.twitter {width: 20px;height: 20px;float: left;background: url(../img/twitter.png)no-repeat;}
+.instagram {width: 20px;height: 20px;float: left;background: url(../img/instagram.png)no-repeat;}
+.youtube {width: 30px;height: 20px;float: left;background: url(../img/youtube.png)no-repeat;}
+.socialBackground {width: 870px;height: 221px;float: left;background: url(../img/contactDownBack.png)no-repeat;}
+
+
+.menuIconMobil {display: none;}
+.contactMenuMobile {display: none;}
+
+
+.aboutUs {width: 100%;height: 100%;position: fixed; background: url(../img/hakkimizdaBackground.jpg)no-repeat fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;transition: all ease-in 0.3s;}
+.aboutUs.active {background-position-x:100%;}
+.aboutUsImage {width: 36%;height: 100%;position: absolute;   right: 0; background: url(../img/personalPhoto.png)no-repeat;background-size: 100% auto;background-position-y:100%;}
+.aboutUsTab { margin-top: 110px;margin-left: 125px;position: relative;z-index: -1; }
+.aboutUsTab .active {opacity: 1; }
+.baharSaygili  {width: auto; float: left; height: auto;opacity: 0.2; font-size: 52px; font-family: "SanFranciscoDisplay-Heavy"; color: #062d5f; cursor: pointer; padding-bottom: 5px;transition: all ease-in 0.3s;}
+.baharSaygiliContent {width: 650px;height: auto;float: left;margin-left: 125px;margin-right: 50%;}
+.baharSaygiliContent h3 {width: 650px;float: left; font-size: 34px; font-family: "SanFranciscoDisplay-Thin";color: #232323;margin-bottom: 40px;margin-top: 50px;}
+.baharSaygiliContent p {width: 650px;float: left;font-size: 16px;font-family: "SanFranciscoDisplay-Light";color: #363636;margin-bottom: 30px;line-height: 20px;}
+.baharSaygiliContent span {width: 650px;float: left;font-size: 16px;font-family: "SanFranciscoDisplay-Light";color: #363636;}
+
+.jsEffectOne.efect {margin-left: -310px;margin-right: 275px;}
+.jsEffectTwo.efect {margin-left: -240px;}
+
+
+.baharSaygiliTabRight {margin-right: 140px;}
+.notActive {display: none;}
+
+.whatAreWeDoingAll {width: 100%;height: 100%;position: fixed; background: url(../img/ne-yapiyoruz-background.jpg)no-repeat fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;transition: all ease-in 0.3s;
+background-position-y:100%;}
+
+.whatAreWeDoing {width: 100%;height: auto;float: left;margin-top: 9%;}
+.whatAreWeDoing h1{width: auto;float: left; font-size: 40px; font-family: "SanFranciscoDisplay-Heavy";color: #062d5f;margin-left: 100px;position: relative;z-index: 9;}
+.whatAreWeDoing .bx-wrapper .bx-viewport {border: none!important;left: 0!important;background:transparent!important;}
+.whatAreWeDoing .bx-wrapper .bx-controls-direction a {    top: 101%!important; left: 52.5%; margin-top: -35px;}
+.whatAreWeDoing .bx-controls-direction {    background: #fff; position: absolute; width: 11%; height: 50px; margin-left: 48%; margin-top: -55px; z-index: 99;}
+.whatAreWeDoing .bx-wrapper .bx-next {z-index: 999;margin-left: 15%;}
+.whatAreWeDoing .bx-wrapper .bx-prev { margin-left: -45%; }
+
+
+.whatAreWeDoing .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager { left: 52.9%; font-size: 16px; z-index: 999; font-weight: inherit!important; width: 35px; margin-bottom: -10px; margin-left: -9px;}
+.whatAreWeDoing .bx-wrapper .bx-pager, .whatAreWeDoing .bx-wrapper .bx-controls-auto {bottom: 31px!important;}
+
+.whatAreWeDoing .bx-wrapper .bx-pager.bx-default-pager a {    background: transparent;  text-indent: 0px;text-decoration: none;color: #a4a4a4;  font-size: 18px; font-family: "SanFranciscoDisplay-Thin";}
+.whatAreWeDoing .bx-wrapper .bx-pager.bx-default-pager a:hover, .whatAreWeDoing .bx-wrapper .bx-pager.bx-default-pager a.active {background:transparent;display: block!important;}
+.whatAreWeDoing .bx-wrapper .bx-pager.bx-default-pager a {display: none!important;}
+
+.whatAreWeDoingSlider {width: 100%;height: auto;float: left;}
+.whatAreWeDoingSlider li {width: 100%;height: auto;float: left;padding-bottom: 30px;}
+
+.whatAreWeDoingSliderLeft {width: 40%;height: auto;float: left;}
+.whatAreWeDoingSliderLeft h3 {float: left; font-size: 34px; font-family: "SanFranciscoDisplay-Thin";color: #232323;margin-top: 40px;margin-bottom: 40px;padding-left: 100px;}
+.whatAreWeDoingSliderLeft p {float: left;font-size: 14px;font-family: "SanFranciscoDisplay-Light";color: #363636;line-height: 25px;padding-left: 100px;}
+.whatAreWeDoingSliderLeft i { width: 65px; height: 65px;font-size: 49px; font-family: "SanFranciscoText-LightItalic"; color:rgba(255, 255, 255, 0.30); position: absolute; left: -14px; padding: 50px; border:1px solid rgba(255, 255, 255, 0.30); border-radius: 100%; text-align: center; line-height: 60px;}
+.whatAreWeDoingSliderRight {width: 50%;height: auto;float: left;margin-left: 10%;margin-top: 10px;}
+.whatAreWeDoingSliderRight img {width: 80%;height: auto;float: left;box-shadow: 0px 11px 27px rgba(51, 51, 51, 0.60);}
+
+
+ 
+ /*ONLİNE COACHİNGG START */ 
+ .onlineCoachingBack {width: 100%;height: 100%;position: fixed; background: url(../img/bs-coaching-background.jpg)no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+z-index: -1;}
+.bsCoachingMobileApp {width: 100%;height: 100%;float: left;overflow: hidden; }
+
+.bsCoachingMobileAppUp {width: 88%;height: auto;float: left; margin-top: 110px;margin-left: 6%;margin-right: 6%;}
+.bsCoachingMobileAppUpLeft {width: auto;height: auto;float: left;}
+.bsLogo  {width: 174px;height: 22px;float: left;}
+.bsCoachingMobileAppUpRight {width: 300px;float: right;}
+.bsCoachingMobileAppUpRight span {width: auto;float: left; font-family: "SanFranciscoDisplay-Bold";font-size: 20px;color: #344a71;text-align: center;margin-bottom: 15px;}
+
+.iphoneApp {background: url(../img/bs-coaching-app-store.png)no-repeat;width: 127px;height: 37px;float: left;margin-right: 30px;    box-shadow: 0px 0px 11px rgba(51, 51, 51, 0.76); border-radius: 6px;}
+.androidApp {background: url(../img/bs-coaching-google-play.png)no-repeat;width: 112px;height: 37px;float: left;    box-shadow: 0px 0px 11px rgba(51, 51, 51, 0.76); border-radius: 6px;}
+
+.bsCoachingMobileApp h1 {width: 100%; float: left; font-size: 40px; font-family: "SanFranciscoDisplay-Heavy";color: #062d5f;margin-bottom: 20px;}
+.bsCoachingMobileApp h3 {width: 100%; float: left; font-size: 25px; font-family: "SanFranciscoDisplay-Thin";color: #232323;margin-bottom: 20px;}
+
+.bsCoachingMobileAppContent {width: 88%;height: auto;margin: 0 auto;display: table;}
+
+.bsCoachingMobileAppContent ul {width: 100%;height: auto;margin: 0 auto;display: table;}
+.bsCoachingMobileAppContent ul li {width: 15%;height: auto;float: left;margin-left: 2%;}
+.bsCoachingMobileAppContent ul li:first-child {margin-left: 0;}
+.bsCoachingMobileAppContent ul li span {width: auto;float: left; font-family: "SanFranciscoDisplay-Bold";font-size: 12px;color: #454445;margin-bottom: 5px;}
+.bsCoachingMobileAppContent ul li p {width: auto;float: left;height: 60px;  font-family: "SanFranciscoDisplay-Regular";font-size: 13px;color: #454445;line-height: 16px;margin-bottom: 15px;}
+.bsCoachingMobileAppContent ul li img {width: 100%;float: left;box-shadow:0px 5px 25px rgba(51, 51, 51, 0.40);}
+
+.iphoneApp {width: 100px; height: 29px; background-position: center top; background-size: 100% auto;margin-right: 55px;margin-left: 30px;}
+.androidApp {width: 93px; height: 29px; background-position: center top; background-size: 100% auto;}
+
+ /*ONLİNE COACHİNGG END */ 
+
+ .opportunityBack {width: 100%;height: 100%;position: fixed; background: url(../img/firsatlar-background.jpg)no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+z-index: -1;}
+.opportunity {width: 80%;margin-left: 10%;height: auto;float: left;margin-top: 110px;}
+.opportunity h1 {width: 100%;text-align: left;float: left; font-family: "SanFranciscoDisplay-Heavy";font-size: 40px;color: #fff;margin-bottom: 60px;}
+.opportunity ul {width: 100%;height: auto;float: left;}
+.opportunity ul li {width: 16.55%;margin-left:4.3%;float: left;}
+.opportunity ul li:first-child {margin-left: 0;}
+.opportunity ul li i {width: 100%;height: 270px;float: left; position: relative; background:url(../img/firsatlar-background.png)no-repeat;background-position: center top; background-size: 100% auto;}
+.opportunityContent {width: 100%;height: auto;float: left;background-color: #fff;margin-top: -270px;}
+.opportunityContent img {width: 100%;height: auto; float: left;position: relative;}
+.opportunityContent span {width: 100%;text-align: center;float: left; font-family: "SanFranciscoDisplay-Light";font-size: 13px;color: #363636;line-height: 20px;margin-top: 10px;}
+.opportunityContent p {width: 100%;text-align: center;float: left; font-family: "SanFranciscoDisplay-Bold";font-size: 14px;color: #dc204b; line-height: 20px;margin-top: 3px;margin-bottom: 10px;}
+
+
+.onlineServicesBack {width: 100%;height: 100%;position: fixed; background: url(../img/online-services.jpg)no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+z-index: -1;background-position-y: 100%;}
+
+.onlineServicesAll {    width: 88%; height: auto; float: left; margin-top: 110px; margin-left: 6%; margin-right: 6%;}
+.onlineServices {width: 100%;height: auto;float: left;margin-bottom: 40px;}
+.onlineServices span {width: auto;height: auto; float: left;margin-right: 6%; font-size: 30px; font-family: "SanFranciscoDisplay-Heavy";color: #fff;opacity: 0.4;cursor: pointer;}
+.onlineServices span.active {opacity: 1;}
+
+.trainerRequestContent {width: 50%;height: auto;float: left;}
+.trainerRequestContent input[type="text"] {width: 20%;height:auto;float: left; padding: 0 2.5% 2% 2.5%;margin-right: 5%;margin-bottom: 4%; background:transparent;border: none;border-bottom: 1px solid #062d5f;color:#2e456d;font-family: "SanFranciscoDisplay-Medium";font-size: 14px;  outline: 0;}
+.trainerRequestContent input[type="email"] {width: 20%;height:auto;float: left;padding: 0 2.5% 2% 2.5%;margin-right: 5%;margin-bottom: 4%; background:transparent;border: none;border-bottom: 1px solid #062d5f;color:#2e456d;font-family: "SanFranciscoDisplay-Medium";font-size: 14px;  outline: 0;}
+.trainerRequestContent input[type="number"] {width: 20%;height:auto;float: left;padding: 0 2.5% 2% 2.5%;margin-right: 5%;margin-bottom: 4%; background:transparent;border: none;border-bottom: 1px solid #062d5f;color:#2e456d;font-family: "SanFranciscoDisplay-Medium";font-size: 14px;  outline: 0;}
+.trainerRequestContent input[type="date"] {width: 20%;height:17px;float: left;padding: 0 2.5% 2% 2.5%;margin-right: 5%;margin-bottom: 4%; background:transparent;border: none;border-bottom: 1px solid #062d5f;color:#2e456d;font-family: "SanFranciscoDisplay-Medium";font-size: 14px;  outline: 0;}
+.trainerRequestContent input::placeholder {color: #2e456d;}
+.trainerRequestContent input:focus {color: #062d5f;}
+
+.trainerRequestContent select {width: 25%;height:auto;padding: 0 2.5% 2% 2.5%;margin-right: 5%;margin-bottom: 4%; background:transparent;border: none;border-bottom: 1px solid #062d5f;color:#2e456d;outline: 0; }
+.trainerRequestContent select option {background:rgba(223, 217, 219, 0.59)!important;; appearance:none; -moz-appearance:none; -webkit-appearance:none;  background:transparent;}
+
+
+.dayAndHourDynamicAll {width: auto;height: auto;float: left;}
+.dayAndHourDynamic {width:100%;height: auto;float: left; }
+.dayAndHourDynamic i {width:7%;height:auto;line-height: 130%;font-size: 30px; float: left;background: #062d5f;color:#fff;opacity: 0.4;text-align: center;border-radius: 5px;transition:all ease-in 0.3s;cursor: pointer;}
+.dayAndHourDynamic i:hover {opacity: 1;}
+.dayAndHourDynamicContent {width: 100%;height: auto;float: left;}
+.dayAndHourDynamicContent span {width: 27%;float: left; font-size: 17px;margin-right: 6%; font-family: "SanFranciscoDisplay-Medium";color: #062d5f;}
+
+.dayAndHourDynamicContent select {width: 27%;height:auto;float: left;padding: 1.5% 2.5% 1.5% 2.5%;margin-right: 7%;margin-bottom: 1%; background:transparent;border: none;border: 1px solid #062d5f;color:#062d5f;outline: 0;border-radius: 10px;font-size: 15px;font-family:"SanFranciscoDisplay-Medium";  }
+.dayAndHourDynamicContent input[type="time"] {width: 11%;height:auto;float: left;padding: 1.5% 0% 1.5% 1.5%;margin-right: 5%;margin-bottom: 1%; background:transparent;border: none;border: 1px solid #062d5f;color:#062d5f;outline: 0;border-radius: 10px;font-size: 13px;font-family:"SanFranciscoDisplay-Medium";  }
+
+.dayAndHourDynamicDay {display: none;}
+.dayAndHourDynamicDay select {width: 27%;height:auto;float: left;padding: 1.5% 2.5% 1.5% 2.5%;margin-right: 7%;margin-left: 33%; margin-bottom: 1%; background:transparent;border: none;border: 1px solid #062d5f;color:#062d5f;outline: 0;border-radius: 10px;font-size: 15px;font-family:"SanFranciscoDisplay-Medium";  }
+.dayAndHourDynamicDay input[type="time"] {width: 11%;height:auto;float: left;padding: 1.5% 0% 1.5% 1.5%;margin-right: 5%;margin-bottom: 1%; background:transparent;border: none;border: 1px solid #062d5f;color:#062d5f;outline: 0;border-radius: 10px;font-size: 13px;font-family:"SanFranciscoDisplay-Medium";  }
+.dayAndHourDynamicDay.active {display: block;}
+
+.dayAndHourOpacity {width: 100%;height: auto;float: left;}
+.dayAndHourOpacity span {margin-left: 33%;width: 22%;line-height: 140%;height:auto;float: left;padding:  1.5% 2.5% 1.5% 2.5%;margin-top: 1%; border: 1px solid #062d5f;color:#062d5f;border-radius: 10px;font-size: 15px;font-family:"SanFranciscoDisplay-Medium"; font-weight: 800;opacity: 0.4;cursor: default;}
+.dayAndHourOpacity p {margin-left: 6.5%;width: 8%;line-height: 140%;height:auto;float: left;padding:  1.5% 2.5% 1.5% 2.5%;margin-top: 1%; border: 1px solid #062d5f;color:#062d5f;border-radius: 10px;font-size: 15px;font-family:"SanFranciscoDisplay-Medium"; font-weight: 800;opacity: 0.4;cursor: default;}
+
+
+.packageAndLevel {width: 100%;height: auto;float: left;margin-top: 5%;}
+.packageAndLevel select {width: 40%;height:auto;padding: 0 2.5% 2% 2.5%;margin-right: 5%;margin-bottom: 4%; background:transparent;border: none;border-bottom: 1px solid #33496f;color:#33496f;outline: 0;font-size: 15px;font-family:"SanFranciscoDisplay-Medium"; }
+.packageAndLevel select option {background:rgba(223, 217, 219, 0.59)!important; appearance:none; -moz-appearance:none; -webkit-appearance:none;  background:transparent;}
+
+
+.servicePrice {width: 86%;float: left;font-family: "SanFranciscoDisplay-Light";font-size: 25px; color: #062d5f;opacity: 0.7;}
+.servicePrice p {    width: 47%; float: right; margin-left: 6%; text-align: center;}
+
+.sendRequestForm {width:86%;height: 60px;line-height: 60px;text-align: center; float: left;background:transparent;border: 1px solid #062d5f;border-radius: 50px;margin-top: 3%;font-family: "SanFranciscoDisplay-Bold";font-size: 18px;color: #062d5f!important;cursor: pointer;transition: all ease-in 0.3s;}
+.sendRequestForm:hover {background:#dc204b;color: #fff!important;border:1px solid #dc204b;}
+
+
+.trainerRequestContent input::-webkit-outer-spin-button, .trainerRequestContent input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0; }
+.trainerRequestContent select  {-webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; }
+.trainerRequestContent select::-ms-expand {display: none; }
+.trainerRequestContent input::-webkit-inner-spin-button, .trainerRequestContent input::-webkit-calendar-picker-indicator {opacity: 0;width: 50%;height: 20px;position: relative;margin-right: -39%; -webkit-appearance: none;cursor: pointer; }
+.trainerRequestContent select {  background: url(../img/select-right.png)no-repeat!important; background-position-x: 90%!important;cursor: pointer;}
+.trainerRequestContent input[type="date"] {    background: url(../img/select-right.png)no-repeat!important; background-position-x: 90%!important;}
+.dayAndHourDynamic select {background:transparent!important;cursor: pointer;}
+
+
+.paymentSystemAll {   position: absolute;  table-layout: fixed;display: table; width: 100%; height: 100%;top: -100%; background:rgba(0, 0, 0, 0.90);z-index: -99;transition: all ease-in 0.5s;}
+.paymentSystemAll.active {z-index: 99;top: 0%;}
+.paymentSystem {    display: table-cell; vertical-align: middle;}
+.paymentSystemContent {width: 30%;margin:0 auto;display: table;height: 100%;}
+.paymentSystemContent span {width: 100%;height: auto; float: left; font-size: 30px; font-family: "SanFranciscoDisplay-Thin";color: #fff;}
+.paymentSystemContent p {width: 100%;height: auto; float: left; font-size: 18px; font-family: "SanFranciscoDisplay-Light";font-weight: bold; color: #fff;margin-top: 30px;}
+
+.paymentSystemImages {width: auto;margin:0 auto;display: table;}
+.paymentSystemImages i {background:url(../img/paymentTransfer.png)no-repeat;width: 270px;height: 200px;float: left;margin-top: 20px;cursor: pointer;  }
+.paymentSystemImages i:hover {background-position: 0px -200px;}
+.paymentSystemInformation.active {opacity: 1;visibility: visible;}
+.paymentSystemInformation {width: 100%;height: auto;float: left;opacity: 0;visibility: hidden;-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+.paymentSystemInformation h4 {width: 100%;height: auto; float: left; font-size: 19px; font-family: "SanFranciscoDisplay-Thin";color: #fff;line-height: 22px; margin:20px 0 20px 0;}
+.paymentSystemInformation ul {width: 100%;height: auto;float: left;}
+.paymentSystemInformation ul li {width: 100%;height: auto;float: left; margin-bottom: 7px;}
+.paymentSystemInformation span {width: 40%;height: auto;float: left;font-size: 15px; font-family: "SanFranciscoDisplay-Thin";color: #cdcdcd; }
+.paymentSystemInformation span:after {content: ":";font-size: 15px;float: right;}
+.paymentSystemInformation p {width: 54%;height: auto;float: right;font-size: 15px;text-align: left;font-family: "SanFranciscoDisplay-Thin";color: #cdcdcd;margin-top: 0;}
+
+.paymentSystemClose {width: 24px;height: 24px;position: absolute;right: 0; margin-right: 5%;    margin-top:-20px; background:url(../img/close2.png)no-repeat;cursor: pointer;}
+
+.sliderLoaderCircleSpinner {float:left;margin-top:-43px;}
+
+@media only screen and (max-width:1023px){
+
+.headerAll {padding-top: 20px;}
+.logo {margin-left: 20px; }
+.menuAll {margin-right: 18px;}
+.menuAll ul{display: none;}
+
+.menuIconMobil {display: block;width: 20px;height: 20px;float: left;background: url(../img/menu-icon.png)no-repeat;margin-left:10px;margin-top: -2px;}
+.menuIconMobil:focus{background-position: 0px -20px;}
+
+
+
+.contactMenu {width: 100%;}
+.contactMenuBlur{display: none;}
+.contactMenuBlur.active{display: none;}
+
+.contactMenuLayout {padding: 17px 17px 0 0;}
+.contactMenuLayoutLeft {margin-top: 246px; top: 0;}
+.contactMenuLayoutLeft h3{ font-size: 15px;margin-bottom: 25px;}
+.contactMenuLayoutLeft p {width: 160px; font-size: 8px;margin-bottom: 25px;}
+.contactMenuLayoutLeft a {width: auto; font-size: 8px;}
+
+.contactMenuMobile {display: block;width: auto; position: absolute; left: 0; z-index: 9;top: 0; margin-left: 14%;margin-top: 77px;}
+.contactMenuMobile ul {width: 80%;height: auto;float: left;}
+.contactMenuMobile ul li {width:100%;height: auto;float: left;padding-bottom: 35px;}
+.contactMenuMobile ul li:last-child{border-bottom: 1px solid #f1f2f4;}
+.contactMenuMobile ul li a {width: auto; float: left; font-family: "SanFranciscoDisplay-Heavy";font-size: 15px;color: #062d5f;}
+
+.contactBackUp {width: 300px;height: 300px;left: -150px;}
+
+
+.contactMenuSocial ul {margin-top: -82px;}
+.contactMenuSocial span {margin-top: -38px;}
+
+.sliderImageBack {    -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
+ background-size: cover!important; background-attachment: scroll!important; background-position: 30% 100%!important;}
+.sliderText  {display: none;}
+.sliderPager {width: 100%;margin-left: 0;}
+.sliderPager ul {width: auto;margin: 0 auto;float: none;display: table;}
+.sliderLoader {width: 42px;}
+
+
+.sliderDetailImage {margin-left: 5%!important;margin-top: -50px!important;}
+.sliderDetailTitle {color: #000!important;position: relative;z-index: 9;float: left;font-size: 50px;}
+.sliderDetailText {width: 100%!important; color: #000!important;position: relative!important;z-index: 9!important;float: left!important;font-size: 50px;}
+/*.sliderPopupBackground {background: url(../img/detail.jpg)no-repeat!important;    background-position: center top!important; background-size: 100% auto!important;width: 100%!important;height: 270px;float: left;margin-top: -20%!important;}
+*/
+.onlineCoachingBack {overflow: scroll;}
+.firsatlarBack {overflow: scroll;}
+.onlineServicesBack {overflow: scroll;}
+
+#openPopup {margin-top: -55%!important;margin-left: 30%!important;margin-top: -10%!important;}
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px){
+
+.mainSliderTitle {    width: 80%!important; margin-top: 10%!important; margin-left: 22.5%!important; height: 100%!important; font-size: 35px!important; left: 0%!important;line-height: 30px!important;}
+.mainSliderText {   width: 75%!important; margin-top: 20%!important; margin-left:27%!important; height: 100%!important;font-size: 12px!important; }
+.mainSliderButton {   width: 100%!important; margin-top: -10%!important; margin-left:37%!important; height: 100%!important;font-size: 12px!important; }
+
+
+
+  .aboutUs {background-position-x: 17%;}
+  .aboutUsTab {margin-left: 45px;}
+.baharSaygili {font-size: 36px;}
+.baharSaygiliTabRight {margin-right: 20px;}
+.baharSaygiliContent {margin-left: 45px;}
+
+.baharSaygiliContent {width: 81%;}
+.baharSaygiliContent h3 {width: 100%;font-size: 19px;    margin-bottom: 25px; margin-top: 40px;}
+.baharSaygiliContent p {width: 100%;font-size: 12px;line-height: 12px;margin-bottom: 10px;}
+.baharSaygiliContent span {width: 100%;font-size: 12px;}
+
+.jsEffectTwo{position: absolute; width: 315px;}
+
+.aboutUsImage {    width: 55%;z-index: -99;}
+
+.jsEffectTwo.efect {margin-left: -258px;}
+.jsEffectOne.efect {margin-left: -235px;}
+
+
+
+.contactMenuLayoutLeft h3 {margin-top: 60px!important;}
+.contactMenuMobile ul li {padding-bottom: 25px!important;}
+
+.bsCoachingMobileAppUpRight span{width: 100%; text-align: center;}
+.bsCoachingMobileAppUpLeft {float: none;margin: 0 auto;display: table;}
+.bsCoachingMobileAppContent {overflow: hidden;}
+
+.paymentSystemAll {position: fixed!important;}
+.paymentSystemClose {margin-top: 20px;}
+.paymentSystemContent {padding-top: 40px;height: 110%!important;}
+
+.paymentSystem {    height: 100%; width: 100%; position: fixed; overflow: scroll;}
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width:768px){
+.whatAreWeDoing {margin-top: 80px;}
+.whatAreWeDoing h1 {width: 100%;height: auto;text-align: center;margin-left: 0;font-size: 30px;}
+
+
+.whatAreWeDoingSlider li i {display: none;}
+.whatAreWeDoingSliderLeft {width: 100%;margin-left: 0;}
+.whatAreWeDoingSliderLeft h3 {width: 90%;text-align: center;padding-left: 5%;font-size: 20px;margin-top: 20px;margin-bottom: 20px;  }
+.whatAreWeDoingSliderLeft p {width: 90%;text-align: center;padding-left: 5%;font-size: 16px;height: 80px;overflow: hidden;}
+
+.whatAreWeDoingSliderRight {width: 100%;}
+
+.whatAreWeDoing .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {left: 48%;}
+.whatAreWeDoing .bx-controls-direction {    width: 40%;  margin-left: 30%;}
+
+.contactMenuLayoutLeft p {width: 200px;font-size: 12px;  }
+.contactMenuLayoutLeft a {font-size: 12px;}
+}
+
+@media only screen and (min-width:320px) and (max-width:320px){
+
+_::-webkit-full-page-media, _:future, :root .sliderPopupText1 {font-size: 12px!important;}
+_::-webkit-full-page-media, _:future, :root .sliderPopupText2 {margin-top: -1%!important;}
+_::-webkit-full-page-media, _:future, :root .sliderPopupText3 {max-height: 148px!important;overflow: hidden!important;text-align: justify!important;}
+_::-webkit-full-page-media, _:future, :root .sliderPopupClose {margin-top: -40%!important;}
+
+.contactMenuMobile ul li {padding-bottom: 15px!important;}
+
+.contactMenuMobile {margin-top: 55px;}
+.contactMenuLayoutLeft {margin-top: 215px;}
+.contactMenuLayoutLeft h3 {margin-top: 0!important;margin-bottom: 10px;}
+.contactMenuLayoutLeft p {margin-bottom: 10px;}
+.contactMenuSocial span {margin-top: -20px;}
+.contactMenuSocial ul {margin-top: -60px;}
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:359px){
+.bsCoachingMobileAppUp {margin-left: 5%; margin-right: 5%;}
+.appMobile {width: 250px;margin: 0 auto;display: table;}
+.bsCoachingMobileAppUpRight {width: 100%;margin: 30px 0 35px 0;}
+  .bsCoachingMobileApp h1 {margin-top: 60px;font-size: 30px;text-align: center;}
+  .bsCoachingMobileApp h3 {font-size: 20px; line-height: 27px;}
+.bsCoachingMobileAppContent ul li {width: 100%;margin-left: 0%;margin-bottom: 5%;margin-top: 5%;}
+
+.bsCoachingMobileAppContent ul li:nth-child(1n+1) {margin-left: 0;}
+.bsCoachingMobileAppContent ul li span {width: 100%; font-size: 14px;height: 25px;}
+.bsCoachingMobileAppContent ul li p {width: 100%; font-size: 14px;line-height: 19px;height: auto;overflow: hidden;}
+.iphoneApp {width: 127px; height: 37px; background-position: center top; background-size: 100% auto;    margin-right: 10px; margin-left: 0;}
+.androidApp {width:112px; height: 37px; background-position: center top; background-size: 100% auto;}
+
+.mainSliderTitle {  font-size: 30px!important;  margin-top: 15%!important;}
+.mainSliderText {    margin-top: 25%!important;  }
+.mainSliderButton {  margin-top: -5%!important; }
+
+}
+
+@media only screen and (min-width:320px) and (max-width:379px){
+.whatAreWeDoingSliderLeft h3 {width: 90%;text-align: center;padding-left: 5%;font-size: 20px;margin-top: 20px;margin-bottom: 20px;    height: 37px;}
+.whatAreWeDoingSliderLeft p {width: 90%;text-align: center;padding-left: 5%;font-size: 16px;height: 105px;overflow: hidden;}
+  .opportunity ul li {width: 100%;margin-bottom: 10%;}
+.opportunity ul li:nth-child(1n+1) {margin-left: 0;}
+
+
+
+}
+
+@media only screen and (min-width:320px) and (max-width:460px){
+.trainerRequestContent {width: 100%;}
+.trainerRequestContent input[type="text"] {width: 95%;margin-right: 0%;}
+.trainerRequestContent input[type="date"] {width: 95%;margin-right: 0%;}
+.trainerRequestContent input[type="number"] {width:95%;margin-right: 0%;}
+.trainerRequestContent input[type="email"] {width: 95%;margin-right: 0%;}
+.trainerRequestContent select  {width: 100%;margin-top: 0.5%;margin-right: 0%;    background-position: 94% 0px!important;
+    height: 25px;}
+.dayAndHourDynamicContent span {width: 100%;margin-right: 0;margin: 10px 0 10px 0;}
+
+.dayAndHourDynamicContent select {width: 45%; height: 40px;margin-right: 4%;}
+.dayAndHourDynamicContent input[type="time"] {width: 25%;    height: 28px; margin-top: 1%;}
+
+.dayAndHourDynamic i {width: 12%;    margin-top: 1%;line-height: 128%;}
+.dayAndHourOpacity span {width: 40%;margin-left: 0%;    line-height: 25px; height: 25px;}
+
+.dayAndHourOpacity p {  width: 23%;  margin-left: 2.5%;  line-height: 25px; height: 25px;}
+
+.dayAndHourDynamicDay select  {width: 45%; height: 40px;margin-right: 4%;margin-left: 0;}
+ .dayAndHourDynamicDay input[type="time"] {width: 25%;    height: 28px; margin-top: 1%;}
+
+ .servicePrice {width: 100%;}
+ .servicePrice p {margin-left: 0%;}
+
+ .sendRequestForm {width: 100%;}
+
+ 
+
+.paymentSystemContent {width: 80%;}
+.paymentSystemContent span {font-size: 20px;}
+.paymentSystemContent p { font-size: 15px; }
+ .paymentSystemImages i {width: 150px;height: 111px;background-position: center top!important;background-size: 100% auto;}
+ .paymentSystemImages i:hover {width: 150px;height: 111px;background-position: 0px -111px!important;}
+ .paymentSystemInformation h4 {font-size: 15px;}
+ .paymentSystemInformation span {width: 34%; font-size: 12px;}
+ .paymentSystemInformation p {width: 62%; font-size: 12px;}
+
+ .onlineServices span {font-size: 24px;}
+  }
+
+
+
+
+@media only screen and (min-width:360px) and (max-width:460px){
+.bsCoachingMobileAppUp {margin-left: 5%; margin-right: 5%;}
+.appMobile {width: 250px;margin: 0 auto;display: table;}
+.bsCoachingMobileAppUpRight {width: 100%;margin: 25px 0 35px 0;}
+  .bsCoachingMobileApp h1 {margin-top: 60px;font-size: 30px;text-align: center;}
+  .bsCoachingMobileApp h3 {font-size: 20px; line-height: 27px;}
+.bsCoachingMobileAppContent ul li {width: 100%;margin-left: 0%;margin-bottom: 5%;margin-top: 5%;}
+
+.bsCoachingMobileAppContent ul li:nth-child(1n+1) {margin-left: 0;}
+.bsCoachingMobileAppContent ul li span {width: 100%; font-size: 14px;height: 25px;}
+.bsCoachingMobileAppContent ul li p {width: 100%; font-size: 14px;line-height: 19px;height: auto;overflow: hidden;}
+.iphoneApp {width: 127px; height: 37px; background-position: center top; background-size: 100% auto;    margin-right: 10px; margin-left: 0;}
+.androidApp {width:112px; height: 37px; background-position: center top; background-size: 100% auto;}
+
+}
+
+
+
+@media only screen and (min-width:380px) and (max-width:767px){
+  .aboutUsImage {    width: 39%;}
+  .opportunity ul li {width: 45%;margin-bottom: 10%;margin-left: 10%;}
+.opportunity ul li:nth-child(2n+1) {margin-left: 0;}
+  }
+
+
+  @media only screen and (min-width:380px) and (max-width:460px){
+.mainSliderTitle {margin-top: 12%!important;}
+  }
+
+
+  @media only screen and (min-width:461px) and (max-width:767px){
+.mainSliderTitle {margin-top: 17%!important;}
+.bsCoachingMobileAppUp {margin-left: 5%; margin-right: 5%;}
+.appMobile {width: 250px;margin: 0 auto;display: table;}
+.bsCoachingMobileAppUpRight {width: 100%;margin: 30px 0 30px 0;}
+  .bsCoachingMobileApp h1 {margin-top: 40px;text-align: center;}
+.bsCoachingMobileAppContent ul li {width: 47%;margin-left: 5%;margin-bottom: 2%;margin-top: 5%;}
+
+.bsCoachingMobileAppContent ul li:nth-child(2n+1) {margin-left: 0;}
+.bsCoachingMobileAppContent ul li span {font-size: 14px;}
+.bsCoachingMobileAppContent ul li p {font-size: 14px;line-height: 19px;height: 75px;overflow: hidden;}
+
+.iphoneApp {width: 127px; height: 37px; background-position: center top; background-size: 100% auto;    margin-right: 10px; margin-left: 0;}
+.androidApp {width:112px; height: 37px; background-position: center top; background-size: 100% auto;}
+
+.trainerRequestContent {width: 105%;}
+
+.trainerRequestContent input[type="text"] {width:40%;}
+.trainerRequestContent input[type="date"] {width: 40%;padding: 0 2.5% 1.6% 2.5%;}
+
+.trainerRequestContent input[type="number"] {width:40%;}
+.trainerRequestContent input[type="email"] {width: 40%;}
+.trainerRequestContent select  {width: 44.5%;margin-top: 0.9%;     padding: 0 2.5% 1% 2.5%;   background-position: 94% 0px!important;
+    height: 25px;}
+.dayAndHourDynamicContent span {width: 40%;margin: 10px 0 10px 0;}
+
+.dayAndHourDynamicContent select {width: 44.5%; height: 40px;margin-right: 4%;}
+.dayAndHourDynamicContent input[type="time"] {width: 50%;    height: 28px; margin-top: 1%;}
+
+.dayAndHourDynamicContent span {width: 100%;text-align: center;}
+
+.dayAndHourDynamicContent select {width: 45%; height: 40px;margin-right: 4%;}
+.dayAndHourDynamicContent input[type="time"] {width: 25%;    height: 28px; margin-top: 1%;}
+
+.dayAndHourDynamic i {width: 12%;    margin-top: 1%;line-height: 128%;}
+.dayAndHourOpacity span {width: 40%;margin-left: 0%;    line-height: 25px; height: 25px;}
+
+.dayAndHourOpacity p {  width: 23%;  margin-left: 2.5%;  line-height: 25px; height: 25px;}
+
+.dayAndHourDynamicDay select  {width: 45%; height: 40px;margin-right: 4%;margin-left: 0;}
+ .dayAndHourDynamicDay input[type="time"] {width: 25%;    height: 28px; margin-top: 1%;}
+
+ .servicePrice {width: 100%;}
+ .servicePrice p {margin-left: 0%;}
+
+ .sendRequestForm {width: 100%;}
+
+ .paymentSystemAll {position: fixed;}
+
+.paymentSystemContent {width: 80%;}
+.paymentSystemContent span {font-size: 20px;}
+.paymentSystemContent p { font-size: 15px; }
+ .paymentSystemImages i {width: 150px;height: 111px;background-position: center top;background-size: 100% auto;}
+ .paymentSystemImages i:hover {width: 150px;height: 111px;background-position: 0px -111px!important;}
+ .paymentSystemInformation h4 {font-size: 15px;}
+ .paymentSystemInformation span {width: 40%; font-size: 13px;}
+ .paymentSystemInformation p {    width: 51%; font-size: 13px;}
+
+ .onlineServices span {font-size: 34px;}
+  }
+
+
+
+  @media only screen and (min-width:550px) and (max-width:767px){
+    .jsEffectTwo {width: 100%;}
+    .baharSaygiliContent {width: 65%;}
+
+    .baharSaygiliContent h3 {font-size: 22px;  }
+.baharSaygiliContent p {font-size: 15px;line-height: 16px;}
+.baharSaygiliContent span {font-size: 15px;}
+.baharSaygiliTabRight {margin-right: 60px; }
+}
+
+
+
+
+
+    @media only screen and (min-width:768px) and (max-width:1023px){
+
+#layerslider .ls-loop, #layerslider  .ls-clip  {position: relative!important;}
+.mainSliderTitle {width: 80%!important; margin-top: -10%!important;margin-left: 22%!important;font-size: 50px!important;line-height: 55px!important; clip: rect(0px 0px 0px 0px)!important;}
+.mainSliderText {width: 90%!important;margin-left: 27%!important;margin-top: -10%!important;font-size:20px!important;}
+.mainSliderButton {margin-left: 37%!important;margin-top: -10%!important;font-size: 15px!important;}
+
+.sliderPopupText1 {font-size:22px!important;letter-spacing: 0!important;}
+.sliderPopupText2 {font-size:18px!important;letter-spacing: 0!important;}
+.sliderPopupText3 {font-size:16px!important;letter-spacing: 0!important;}
+.sliderPopupClose {margin-top: -55%!important;}
+
+
+.aboutUs {background-position-x: 17%;}
+.aboutUsTab {margin-left: 45px;}
+.baharSaygili {font-size: 36px;}
+.baharSaygiliTabRight {margin-right: 20px;}
+.baharSaygiliContent {margin-left: 45px;}
+
+.baharSaygiliContent {width: 65%;}
+.baharSaygiliContent h3 {width: 100%; font-size: 22px;  }
+.baharSaygiliContent p {width: 100%;font-size: 15px;line-height: 16px;}
+.baharSaygiliContent span {width: 100%;font-size: 15px;}
+.baharSaygiliTabRight {margin-right: 60px; }
+
+.jsEffectTwo{position: absolute; width: 100%;}
+
+.aboutUsImage {    width: 40%;z-index: -99;}
+
+.jsEffectTwo.efect {margin-left: -258px;}
+.jsEffectOne.efect {margin-left: -235px;}
+
+
+
+.bsCoachingMobileAppUp {margin-top: 75px;margin-bottom: 40px;}
+
+  .bsCoachingMobileApp h1 {margin-top: 40px;font-size: 28px;}
+.bsCoachingMobileAppContent ul li {width: 30%;margin-left: 5%;margin-bottom: 5%;}
+
+.bsCoachingMobileAppContent ul li:nth-child(3n+1) {margin-left: 0;}
+.bsCoachingMobileAppContent ul li span {font-size: 15px;}
+.bsCoachingMobileAppContent ul li p {font-size: 15px;line-height: 19px;height: 75px;overflow: hidden;}
+
+.iphoneApp {width: 127px; height: 37px; background-position: center top; background-size: 100% auto;    margin-right: 35px; margin-left: 20px;}
+.androidApp {width:112px; height: 37px; background-position: center top; background-size: 100% auto;}
+
+.opportunity ul li {width: 30%;margin-bottom: 4%;margin-left: 5%;}
+.opportunity ul li:nth-child(3n+1) {margin-left: 0;}
+
+.trainerRequestContent {width: 100%;}
+.dayAndHourDynamicAll {width: 93%;}
+.onlineServices span {font-size: 24px;}
+.paymentSystemAll {position: fixed;}
+.paymentSystemContent {width: 50%;}
+.paymentSystemContent span {font-size: 20px;}
+.paymentSystemContent p { font-size: 15px; }
+ .paymentSystemImages i {width: 150px;height: 111px;background-position: center top;background-size: 100% auto;}
+ .paymentSystemImages i:hover {width: 150px;height: 111px;background-position: 0px -111px!important;}
+ .paymentSystemInformation h4 {font-size: 15px;}
+ .paymentSystemInformation span {width: 34%; font-size: 14px;}
+ .paymentSystemInformation p {width: 62%; font-size: 14px;}
+    }
+
+
+@media only screen and (min-width:769px) and (max-width:1023px){
+
+  .whatAreWeDoing {margin-top: 10%;}
+.whatAreWeDoing h1 {margin-left: 40px;margin-bottom: 20px;font-size: 35px;}
+.whatAreWeDoingSlider li i {display: none;}
+.whatAreWeDoingSliderLeft h3 {padding-left: 40px;font-size: 24px;}
+.whatAreWeDoingSliderLeft p {padding-left: 40px;font-size: 13px;}
+
+.whatAreWeDoingSliderRight img {width: 90%;}
+
+
+.whatAreWeDoing .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {left: 54%;}
+.whatAreWeDoing .bx-controls-direction {    width: 20%;  margin-left: 45%;}
+
+}
+
+
+
+@media only screen and (min-width:1024px) and (max-width:1024px){
+.aboutUsImage {width: 41%!important;}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1200px){
+
+
+.sliderLoader {width: 42px;}
+
+.logo {margin-left: 27px;}
+.menuAll {margin-right: 27px;}
+.menuAll ul li {margin-left: 37px;}
+.menuAll ul li a {font-size: 13px;}
+
+.baharSaygili {font-size: 40px;}
+.baharSaygiliContent {width: 50%;}
+.baharSaygiliContent h3{width: 100%;}
+.baharSaygiliContent p{width: 100%;}
+.baharSaygiliContent span{width: 100%;}
+
+.baharSaygiliTabRight {margin-right: 60px;}
+
+.contactMenuLayout {    padding: 40px 30px 0 0;}
+
+
+
+}
+@media only screen and (min-width:1024px) and (max-width:1350px){
+
+  .sliderPager {margin-left: 5%;}
+.sliderPager ul li {margin-left: 20px!important;}
+.sliderPager ul li:first-child {margin-left: 0!important}
+
+.sliderText {width: 170px;margin-left: 10px;}
+.sliderText span {font-size: 12px;}
+
+  }
+
+@media only screen and (min-width:1024px) and (max-width:1279px){
+.bsCoachingMobileAppContent ul li {width: 30%;margin-left: 5%;margin-bottom: 5%;}
+
+.bsCoachingMobileAppContent ul li:nth-child(3n+1) {margin-left: 0;}
+.bsCoachingMobileAppContent ul li span {font-size: 17px;}
+.bsCoachingMobileAppContent ul li p {font-size: 15px;line-height: 19px;}
+
+.bsCoachingMobileAppUp {    margin-top: 120px;    margin-bottom: 50px;}
+
+.trainerRequestContent {width: 65%;}
+.dayAndHourDynamicAll {width: 93%;}
+
+
+
+#layerslider .ls-loop, #layerslider  .ls-clip  {position: relative!important;}
+
+.mainSliderTitle {margin-top: -5%!important; margin-left: 10%!important;     clip: rect(0px 0px 0px 0px)!important;  }
+.mainSliderText {margin-left: 12%!important;margin-top: -5%!important;}
+.mainSliderButton {margin-top: -8%!important;margin-left: 16%!important;}
+
+
+}
+
+
+
+@media only screen and (min-width:1024px) and (max-width:1450px){
+.logo {margin-left: 27px;}
+
+
+.menuIcon {margin-top: -4px;}
+
+
+
+
+.sliderLoader span {    margin-top: -26px;  font-size: 12px;}
+
+.sliderPopupBackground { margin-top: -10%!important;}
+.sliderPopupText1 {margin-top: -4%!important;}
+.sliderPopupText2 {margin-top: -4%!important;}
+.sliderPopupText3 {margin-top: -4%!important;}
+.sliderPopupClose {margin-top: -50%!important;}
+}
+
+@media only screen and (min-width:1201px) and (max-width:1450px){
+
+  .menuAll {margin-right: 27px;}
+.menuAll ul li {margin-left: 50px; }
+
+.menuAll ul li a {font-size: 16px;}
+.contactMenuLayout {padding: 40px 30px 0 0;}
+
+}
+
+ @media only screen and (min-width:1451px) {
+
+#layerslider .ls-loop, #layerslider  .ls-clip  {position: relative!important;}
+
+.mainSliderTitle {margin-top: -5%!important; margin-left: 0!important;     clip: rect(0px 0px 0px 0px)!important;  }
+.mainSliderText {margin-left: 0%!important;margin-top: -5%!important;}
+.mainSliderButton {margin-top: -8%!important;}
+
+
+.sliderPopupBackground { margin-top: -10%!important;}
+.sliderPopupText1 {margin-top: -4%!important;}
+.sliderPopupText2 {margin-top: -4%!important;}
+.sliderPopupText3 {margin-top: -4%!important;}
+.sliderPopupClose {margin-top: -50%!important;}
+
+  .menuAll {margin-right: 70px;}
+.menuAll ul li {margin-left: 70px; }
+
+.menuAll ul li a {font-size: 20px;}
+
+.aboutUsImage {width: 35%;}
+
+}
+
+
+
+
+
+
+ @media only screen and (min-width:1750px) {
+
+.baharSaygili {font-size: 70px;  }
+.baharSaygiliContent {width: 650px;height: auto;float: left;margin-left: 125px;margin-right: 50%;}
+.baharSaygiliContent h3 {width: 650px;float: left; font-size: 46px; font-family: "SanFranciscoDisplay-Thin";color: #232323;margin-bottom: 40px;margin-top: 50px;}
+.baharSaygiliContent p {width: 650px;float: left;font-size: 22px;font-family: "SanFranciscoDisplay-Light";color: #363636;margin-bottom: 30px;line-height: 24px;}
+.baharSaygiliContent span {width: 650px;float: left;font-size: 22px;font-family: "SanFranciscoDisplay-Light";color: #363636;}
+
+
+.aboutUsTab {margin-left: 200px;margin-top: 200px;}
+.baharSaygiliContent {margin-left: 200px;}
+
+.baharSaygiliTabRight {margin-right: 150px;}
+
+.jsEffectOne.efect {margin-left: -450px;}
+.jsEffectTwo.efect {margin-left: -255px; }
+
+
+.whatAreWeDoing h1 {font-size: 60px;margin-left: 200px;}
+.whatAreWeDoingSliderLeft {width: 45%;}
+.whatAreWeDoingSliderLeft h3 {font-size: 45px;padding-left: 200px;}
+.whatAreWeDoingSliderLeft p {font-size: 30px;line-height: 38px!important;padding-left: 200px;}
+.whatAreWeDoingSliderRight {width: 50%;margin-left: 5%;}
+.whatAreWeDoingSlider li i {width: 120px; height: 120px;line-height: 120px;}
+
+.whatAreWeDoing .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {width: 55px;font-size: 24px;    left: 52.5%;    margin-bottom: -13px;}
+
+.bsCoachingMobileAppUp {margin-bottom: 40px;}
+.bsCoachingMobileAppUpRight {width: 340px;}
+.bsCoachingMobileAppUpRight span {font-size: 27px;line-height: 32px;}
+.bsCoachingMobileApp h1 {font-size: 70px;margin-bottom: 40px;}
+.bsCoachingMobileApp h3 {font-size: 50px;margin-bottom: 30px;}
+.bsCoachingMobileAppContent ul li span {font-size: 18px;}
+.bsCoachingMobileAppContent ul li p {font-size: 16px;line-height: 17px;}
+
+.iphoneApp {width: 127px; height: 37px; background-position: center top; background-size: 100% auto;margin-right: 55px;}
+.androidApp {width:112px; height: 37px; background-position: center top; background-size: 100% auto;}
+
+.opportunity {margin-top: 200px;}
+
+}
+
+
+
